@@ -58,13 +58,25 @@ The product direction is intentionally lightweight: fewer tabs, fewer decisions,
 
 ## Screenshots
 
-| Screen | What To Show |
-| --- | --- |
-| Landing / Auth |  |
-| Dashboard |  |
-| Search Job |  |
-| Saved For Later |  |
-| Applications |  |
+1. Landing / Auth
+
+![Landing / Auth](./Screenshot%202026-04-15%20at%2011.49.56.png)
+
+2. Dashboard
+
+![Dashboard](./Screenshot%202026-04-15%20at%2011.50.11.png)
+
+3. Search Job
+
+![Search Job](./Screenshot%202026-04-15%20at%2011.50.29.png)
+
+4. Saved For Later
+
+![Saved For Later](./Screenshot%202026-04-15%20at%2011.51.02.png)
+
+5. Applications
+
+![Applications](./Screenshot%202026-04-15%20at%2011.51.17.png)
 
 ## Tech Stack
 
