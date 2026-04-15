@@ -130,103 +130,7 @@ The dashboard summarizes weekly activity so progress feels tangible, even in a l
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js 22+
-- npm
-- Docker Desktop or a local PostgreSQL instance
-
-### 1. Clone and install
-
-```bash
-git clone <your-repo-url>
-cd applyflow
-npm ci
-```
-
-### 2. Create your environment file
-
-```bash
-cp .env.example .env
-```
-
-The local defaults expect:
-
-- web app on `http://localhost:3000`
-- API on `http://localhost:3001`
-- PostgreSQL on `localhost:5432`
-
-### 3. Start the database
-
-If you want the fastest local setup, start Postgres with Docker:
-
-```bash
-docker compose up db -d
-```
-
-### 4. Run the apps
-
-```bash
-npm run dev
-```
-
-This starts:
-
-- the Next.js app in `apps/web`
-- the Express API in `apps/api`
-
-Local API development runs Drizzle migrations automatically before booting the server.
-
-## Docker Setup
-
-To run the whole stack with containers:
-
-```bash
-docker compose up --build
-```
-
-This brings up:
-
-- PostgreSQL
-- the Express API
-- the Next.js frontend
-
-## Environment Variables
-
-Core local variables from `.env.example`:
-
-| Variable | Purpose |
-| --- | --- |
-| `PORT` | API port |
-| `WEB_URL` | Base URL of the web app |
-| `BETTER_AUTH_URL` | Better Auth callback base |
-| `BETTER_AUTH_SECRET` | Auth secret, should be 32+ chars in production |
-| `DATABASE_URL` | PostgreSQL connection string |
-| `POSTGRES_DB` | Local database name |
-| `POSTGRES_USER` | Local database user |
-| `POSTGRES_PASSWORD` | Local database password |
-| `GOOGLE_CLIENT_ID` | Optional Google OAuth |
-| `GOOGLE_CLIENT_SECRET` | Optional Google OAuth |
-| `GITHUB_CLIENT_ID` | Optional GitHub OAuth |
-| `GITHUB_CLIENT_SECRET` | Optional GitHub OAuth |
-
-For Vercel deployments, the web app also expects:
-
-| Variable | Purpose |
-| --- | --- |
-| `API_INTERNAL_URL` | Internal API origin for Vercel builds |
-| `NEXT_PUBLIC_API_URL` | Public API base URL when needed |
-
-## Scripts
-
-| Command | What It Does |
-| --- | --- |
-| `npm run dev` | Runs the API and web app together |
-| `npm run build` | Builds all workspaces |
-| `npm test` | Runs the API test suite used by CI |
-| `npm run typecheck` | Type-checks all workspaces |
-| `npm run db:migrate -w @applyflow/api` | Runs Drizzle migrations |
-| `npm run db:generate -w @applyflow/api` | Generates new migrations |
+Go on the website, login and start tracking your applications!! <a href="https://applyflow-web.vercel.app/">ApplyFlow</a>
 
 ## Deployment
 
@@ -250,7 +154,6 @@ ApplyFlow is more than a CRUD app. It pulls together several concerns that often
 - UX details that encourage repeated use
 - CI/CD coordination across web, API, and database layers
 
-It is a strong example of building a product with both user empathy and production discipline.
 
 ## Possible Next Steps
 
@@ -261,12 +164,6 @@ It is a strong example of building a product with both user empathy and producti
 - export / import support
 - shared opportunities board or collaboration features
 
-## Author Notes
+## Author
+Nicolas Pedrazzi
 
-This README is written to showcase the project in a portfolio-style GitHub context. If you plan to move it to a separate repository, you can easily add:
-
-- live demo links
-- architecture diagrams
-- GIF walkthroughs
-- screenshots in the placeholders above
-- a short "What I learned" section in your own voice
