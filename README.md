@@ -1,8 +1,8 @@
 <h1 align="center">ApplyFlow</h1>
 
 <p align="center">
-  A job search tracker built to make the process feel calmer, clearer, and more controlled.  
-  Check it out here: [ApplyFlow](https://applyflow-web.vercel.app/)
+  A job search tracker built to make the process feel calmer, clearer, and more controlled.<br>
+  Check it out here: <a href="https://applyflow-web.vercel.app/">ApplyFlow</a>
 </p>
 
 <p align="center">
